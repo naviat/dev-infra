@@ -1,0 +1,17 @@
+# Adapted from https://github.com/openzipkin/docker-zipkin/blob/master/docker-compose.yml
+
+version: "3"
+
+services:
+  zipkin:
+    image: openzipkin/zipkin:2
+    environment:
+      - STORAGE_TYPE=mem
+      - ZIPKIN_UI_ENVIRONMENT=dev-infra
+    ports:
+      - 9411:9411
+    networks:
+      - zipkin-net
+
+networks:
+  zipkin-net:
