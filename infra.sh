@@ -240,7 +240,7 @@ case "$1" in
     ;;
     *)
         echo -e "Development infrastructure tools"
-        echo -e "<https://github.com/evenh/dev-infra>\\n"
+        echo -e "<https://github.com/naviat/dev-infra>\\n"
         echo -e "  Usage:  $0 <goal> <service>\\n"
         echo -e "  Ignores services:"
         echo -e "    list          List available tools"
